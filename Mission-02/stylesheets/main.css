@@ -1,0 +1,148 @@
+/* Color, Typography */
+@import url("./theme.css");
+
+/* Reset, Base */
+@import url("./init/normalize.css");
+@import url("./init/base.css");
+
+/* Hidden Content, Easings */
+@import url("./common/a11y.css");
+@import url("./common/easings.css");
+
+/* Pages */
+@import url("./pages/offer.css");
+
+header {
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title-img {
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/icon/shopping.svg);
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-area {
+  display: flex;
+}
+
+.shopping-item {
+  width: 200px;
+  height: 270px;
+  margin-right: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping-img-area {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-item:last-child {
+  margin-right: 0;
+}
+
+.discount-rate {
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  background: var(--color-red-500);
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 174%;
+  text-align: center;
+}
+
+.shooping-img {
+  margin: 14px 0 12px 0;
+}
+
+.shopping-text {
+  margin: 0 14px 18px 14px;
+}
+
+.shopping-title {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: center;
+}
+
+.free {
+  color: var(--color-gray-700);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.grade {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.star {
+  width: 68px;
+  height: 12px;
+  background-image: url(../assets/sprites/rating-stars.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+
+.star1 {
+  background-position: 0 -127px;
+}
+
+.star2 {
+  background-position: 0 -112px;
+}
+
+.star3 {
+  background-position: 0 -140px;
+}
+
+.grade-title {
+  color: var(--color-gray-700);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
